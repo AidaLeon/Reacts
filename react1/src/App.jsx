@@ -2,6 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import {Header} from "./components/Header.jsx";
+import {Profile} from "./components/Profile.jsx";
+import {Skill} from "./components/Skill.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,6 +31,19 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+        <Header/>
+
+        <Profile name="Aida León Vila" age={30} profession="Web Developer"/>
+
+        <ul>
+            <Skill text="Java"/>
+            <Skill text="HTML"/>
+            <Skill text="JavaScript"/>
+            <Skill text="React"/>
+            <Skill text="SpringBoot"/>
+            <Skill text="Boostrap"/>
+        </ul>
+
     </>
   )
 }
