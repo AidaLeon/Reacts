@@ -5,6 +5,8 @@ import './App.css'
 import {Header} from "./components/Header.jsx";
 import {Profile} from "./components/Profile.jsx";
 import {Skill} from "./components/Skill.jsx";
+import {Contact} from "./components/Contact.jsx";
+import {Footer} from "./components/Footer.jsx";
 
 function App() {
 
@@ -30,6 +32,10 @@ function changeShow() {
             ))}
         </ul>)
         }
+
+        <Contact email="aidaleon@hotmail.es" phone="610312241"/>
+
+        <Footer/>
 
     </>
   )
